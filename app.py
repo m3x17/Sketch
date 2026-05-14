@@ -16,7 +16,7 @@ expressions = [e.strip() for e in expr_input.split(",")]
 x_min, x_max = st.slider("X Range", -50, 50, (-10, 10))
 y_min, y_max = st.slider("Y Range", -50, 50, (-10, 10))
 
-fig = plot_functions(expressions, (x_min, x_max),(y_max,y_min))
+fig = plot_functions(expressions, (x_min, x_max),(y_min,y_max))
 st.plotly_chart(fig, use_container_width=True)
 
 st.subheader("Symbolic Analysis")
